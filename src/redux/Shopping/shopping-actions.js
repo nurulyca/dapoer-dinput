@@ -1,11 +1,19 @@
 import * as actionTypes from './shopping-types';
+import swal from 'sweetalert';
 
 export const addToCart = (itemID) => {
+    swal({
+        title: "Added to cart!",
+        text: "This item is added to your cart",
+        icon: "success",
+        button: "Buy more!",
+      });
     return {
         type: actionTypes.ADD_TO_CART,
         payload: {
             id: itemID
         },
+        
     };
 };
 

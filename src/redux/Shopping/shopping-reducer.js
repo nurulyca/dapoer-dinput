@@ -1,8 +1,9 @@
 import * as actionTypes from './shopping-types';
-import { productData } from '../../components/Products/data';
+import { productData, productDataTwo } from '../../components/Products/data';
 
 const INITIAL_STATE = {
     products: productData,
+    productsTwo: productDataTwo,
     cart: [],
     currentItem: null,
 };
@@ -10,13 +11,21 @@ const INITIAL_STATE = {
 const shopReducer = (state = INITIAL_STATE, action) => {
     switch(action.type) {
         case actionTypes.ADD_TO_CART:
-            const item = state.products.find((product) => product.id === action.payload.id )
-            console.log(item, "ITEM")
-            const inCart = state.cart.find((item) => item.id === action.payload.id ? true : false);
-            return {
-                ...state,
-                cart: inCart ? state.cart.map((item) => item.id === action.payload.id ? { ...item, qty: item.qty + 1 } : item) : [...state.cart, { ...item, qty: 1 }]
-            };
+            if (action.payload.id >= 49) {
+                const itemTwo = state.productsTwo.find((product) => product.id === action.payload.id )
+                const inCartTwo = state.cart.find((itemTwo) => itemTwo.id === action.payload.id ? true : false);
+
+                return {
+                    ...state,
+                    cart: inCartTwo ? state.cart.map((itemTwo) => itemTwo.id === action.payload.id ? { ...itemTwo, qty: itemTwo.qty + 1 } : itemTwo) : [...state.cart, { ...itemTwo, qty: 1 }]
+                };
+            } else {
+                const item = state.products.find((product) => product.id === action.payload.id )
+                const inCart = state.cart.find((item) => item.id === action.payload.id ? true : false);
+                return {
+                    ...state,
+                    cart: inCart ? state.cart.map((item) => item.id === action.payload.id ? { ...item, qty: item.qty + 1 } : item) : [...state.cart, { ...item, qty: 1 }]
+                }};
         case actionTypes.REMOVE_FROM_CART:
             return {
                 ...state,
