@@ -1,23 +1,25 @@
 import React, { useState } from "react";
 import styles from "./CartItem.module.css";
-
 import { connect, useDispatch } from "react-redux";
+import { Container, Typography, Button, Grid } from '@material-ui/core';
 import {
   adjustItemQty,
   removeFromCart,
 } from "../../../redux/Shopping/shopping-actions";
+import useStyles from './styles';
 
 const CartItem = ({ item, adjustQty, removeFromCart }) => {
   const [input, setInput] = useState(item.qty);
   const dispatch = useDispatch();
-
+  const classes = useStyles();
+  
   const onChangeHandler = (e) => {
     setInput(e.target.value);
     adjustQty(item.id, e.target.value);
   };
 
   return (
-    <div className={styles.cartItem}>
+    <Grid className={styles.cartItem + "container"}>
       <img
         className={styles.cartItem__image}
         src={item.img}
@@ -30,15 +32,12 @@ const CartItem = ({ item, adjustQty, removeFromCart }) => {
       </div>
       <div className={styles.cartItem__actions}>
         <div className={styles.cartItem__qty}>
-          <label htmlFor="qty">Quantity</label>
-          <input
-            min="1"
-            type="number"
-            id="qty"
-            name="qty"
-            value={input}
-            onChange={onChangeHandler}
-          />
+          <div className={classes.buttons}>
+              <Button stype="button" size="small" onClick={() => adjustQty(item.id, item.qty-1)}>-</Button>
+              <Typography>{item.qty}</Typography>
+              <Button stype="button" size="small" onClick={() => adjustQty(item.id, item.qty+1)}>+</Button>
+          </div>
+          
         </div>
         <button
           onClick={() => dispatch(removeFromCart(item.id))}
@@ -50,7 +49,7 @@ const CartItem = ({ item, adjustQty, removeFromCart }) => {
           />
         </button>
       </div>
-    </div>
+    </Grid>
   );
 };
 

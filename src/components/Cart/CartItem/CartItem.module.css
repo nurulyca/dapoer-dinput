@@ -52,7 +52,7 @@
     width: 60px;
     border-radius: 10px;
     border: 1px solid var(--secondary-color);
-    outline: none;
+    outline: black;
   }
   
   .actions__deleteItemBtn {
@@ -67,7 +67,7 @@
   
   .actions__deleteItemBtn:hover {
     transform: scale(1.2) rotate(360deg);
-    background-color: rgb(209, 15, 15);
+    background-color: rgb(140, 13, 13);
   }
   
   .actions__deleteItemBtn img {

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Cart.module.css";
 import { Link } from 'react-router-dom';
+import { Container, Typography, Button, Grid } from '@material-ui/core';
 
 import { connect, useSelector } from "react-redux";
 
@@ -25,12 +26,14 @@ const Cart = ({ cart }) => {
     setTotalPrice(price);
   }, [cart, totalPrice, totalItems, setTotalPrice, setTotalItems]);
   return (
-    <div className={styles.cart}>
-      <div className={styles.cart__items}>
+    <div className={styles.cart + "container col-sm-12"}>
+      <Grid container spacing={3}>
         {carts.map((item) => (
-          <CartItem key={item.id} item={item} />
+          <Grid item xs={12} sm={4} key={item.id}>
+            <CartItem key={item.id} item={item} />
+          </Grid>
         ))}
-      </div>
+      </Grid>
       <div className={styles.cart__summary}>
         <h4 className={styles.summary__title}>Cart Summary</h4>
         <div className={styles.summary__price}>

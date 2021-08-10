@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { useHistory } from 'react-router-dom';
 
+
 const Navbar = ({ cart }) => {
     const [cartCount, setCartCount] = useState(0);
     const history = useHistory();
@@ -26,17 +27,16 @@ function toCart(e){
     return (
         <>
             <Nav>
-                <div to="/">
-                    <div className={styles.navbar__cart}>
-                        <Link to="/cart">
-                            <img onClick = {(e) => {toCart(e)}}
-                                className={styles.cart__image} style={{marginTop: '20px'}}
-                                src="https://image.flaticon.com/icons/png/512/891/891462.png"
-                                alt="shopping cart"/>
-                        </Link>
-                    </div>
-                </div>
                 <NavLink to='/'>Dapoer Dinput</NavLink>
+                    <Link to="/cart" style={{display: 'flex', marginLeft: '150px'}}>
+                        <div className={styles.navbar__cart}>
+                            <img onClick = {(e) => {toCart(e)}}
+                                className={styles.cart__image}
+                                src="https://image.flaticon.com/icons/png/512/891/891462.png"
+                                alt="shopping cart">
+                            </img>
+                        </div>
+                    </Link>
             </Nav>
         </>
     );
