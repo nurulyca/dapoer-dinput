@@ -12,6 +12,7 @@ import bika2 from '../../images/Bika Ambon.jpg';
 import bolen from '../../images/bolen.jpg';
 import bolu1 from '../../images/Bolu Gulung Red Velvet.jpg';
 import bolu2 from '../../images/Bolu Gulung Vanila.jpg';
+import bolu5 from '../../images/Bolu Gulung Pandan.jpg';
 import bolu3 from '../../images/bolu kukus semangka.jpg';
 import bolu4 from '../../images/bolu kukus.jpg';
 import bubur from '../../images/bubur sumsum.jpg';
@@ -168,6 +169,15 @@ export const productData = [
         id: 10,
         alt: 'Bolu Gulung Vanilla',
         name: 'Bolu Gulung Vanilla',
+        desc: 'Bolu gulung',
+        price: 60000,
+        button: 'Add to Cart'
+    },
+    {
+        img: bolu5,
+        id: 73,
+        alt: 'Bolu Gulung Pandan',
+        name: 'Bolu Gulung Pandan',
         desc: 'Bolu gulung',
         price: 60000,
         button: 'Add to Cart'
