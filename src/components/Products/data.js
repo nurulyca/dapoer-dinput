@@ -1,5 +1,6 @@
 import bomboloni from '../../images/Bomboloni.jpg';
 import banana from '../../images/banana crispy.jpeg';
+import banana2 from '../../images/banana crispy.jpeg';
 import brownies from '../../images/Brownies Sekat 2.jpg';
 import almond from '../../images/Almond Crispy 2.jpg';
 import cucur from '../../images/Cucur.jpg';
@@ -47,6 +48,7 @@ import picnic from '../../images/Picnic roll.jpg';
 import pie from '../../images/Pie Buah.jpg';
 import puding from '../../images/Puding Buah.jpg';
 import risoles from '../../images/Risoles.jpg';
+import risoles2 from '../../images/Risoles.jpg';
 import manis1 from '../../images/Roti Pizza.jpg';
 import manis2 from '../../images/roti abon.jpg';
 import manis3 from '../../images/Roti Blueberry Keju.jpg';
@@ -77,16 +79,25 @@ export const productData = [
         alt: 'Bomboloni',
         name: 'Bomboloni',
         desc: 'Bomboloni',
-        price: 35000,
+        price: 5000,
         button: 'Add to Cart'
     },
     {
         img: banana,
         id: 2,
+        alt: 'Banana Crispy Mini',
+        name: 'Banana Crispy Mini',
+        desc: 'Banana Crispy Mini',
+        price: 5000,
+        button: 'Add to Cart'
+    },
+    {
+        img: banana2,
+        id: 71,
         alt: 'Banana Crispy',
         name: 'Banana Crispy',
         desc: 'Banana Crispy',
-        price: 30000,
+        price: 10000,
         button: 'Add to Cart'
     },
     {
@@ -122,7 +133,7 @@ export const productData = [
         alt: 'Bika Ambon Pandan',
         name: 'Bika Ambon Pandan',
         desc: 'Bika ambon pandan',
-        price: 30000,
+        price: 3000,
         button: 'Add to Cart'
     },
     {
@@ -131,7 +142,7 @@ export const productData = [
         alt: 'Bika Ambon',
         name: 'Bika Ambon',
         desc: 'Bika ambon',
-        price: 45000,
+        price: 3000,
         button: 'Add to Cart'
     },
     {
@@ -147,8 +158,8 @@ export const productData = [
         img: bolu1,
         id: 9,
         alt: 'Bolu Gulung',
-        name: 'Bolu Gulung',
-        desc: 'Bolu gulung red velvet',
+        name: 'Bolu Red Velvet',
+        desc: 'Bolu gulung',
         price: 60000,
         button: 'Add to Cart'
     },
@@ -156,8 +167,8 @@ export const productData = [
         img: bolu2,
         id: 10,
         alt: 'Bolu Gulung Vanilla',
-        name: 'Bolu Gulung',
-        desc: 'Bolu gulung vanilla',
+        name: 'Bolu Gulung Vanilla',
+        desc: 'Bolu gulung',
         price: 60000,
         button: 'Add to Cart'
     },
@@ -165,9 +176,9 @@ export const productData = [
         img: bolu3,
         id: 11,
         alt: 'Bolu Kukus Semangka',
-        name: 'Bolu Kukus',
-        desc: 'Bolu kukus semangka',
-        price: 25000,
+        name: 'Bolu Semangka',
+        desc: 'Bolu kukus',
+        price: 3000,
         button: 'Add to Cart'
     },
     {
@@ -176,7 +187,7 @@ export const productData = [
         alt: 'Bolu Kukus',
         name: 'Bolu Kukus',
         desc: 'Bolu kukus',
-        price: 25000,
+        price: 3000,
         button: 'Add to Cart'
     },
     {
@@ -185,7 +196,7 @@ export const productData = [
         alt: 'Chinese Tart',
         name: 'Chinese Tart',
         desc: 'Chinese Tart',
-        price: 25000,
+        price: 4000,
         button: 'Add to Cart'
     },
     {
@@ -194,7 +205,7 @@ export const productData = [
         alt: 'Donat',
         name: 'Donat',
         desc: 'Donat',
-        price: 25000,
+        price: 5000,
         button: 'Add to Cart'
     },
     {
@@ -230,7 +241,7 @@ export const productData = [
         alt: 'Lapis Surabaya',
         name: 'Lapis Surabaya',
         desc: 'Lapis Surabaya',
-        price: 10000,
+        price: 130000,
         button: 'Add to Cart'
     },
     {
@@ -239,7 +250,7 @@ export const productData = [
         alt: 'Marmer Cake',
         name: 'Marmer Cake',
         desc: 'Marmer cake',
-        price: 20000,
+        price: 100000,
         button: 'Add to Cart'
     },
     {
@@ -248,7 +259,7 @@ export const productData = [
         alt: 'Martabak Mini',
         name: 'Martabak Mini',
         desc: 'Martabak mini',
-        price: 20000,
+        price: 2500,
         button: 'Add to Cart'
     },
     {
@@ -266,16 +277,16 @@ export const productData = [
         alt: 'Muffin Coklat',
         name: 'Muffin Coklat',
         desc: 'Muffin Coklat',
-        price: 20000,
+        price: 5000,
         button: 'Add to Cart'
     },
     {
         img: muffin2,
         id: 23,
-        alt: 'Muffin Gula Merah',
-        name: 'Muffin Gula Merah',
-        desc: 'Muffin Gula Merah',
-        price: 20000,
+        alt: 'Apem Pisang',
+        name: 'Apem Pisang',
+        desc: 'Apem pisang',
+        price: 3000,
         button: 'Add to Cart'
     },
     {
@@ -293,7 +304,7 @@ export const productData = [
         alt: 'Pia Coklat',
         name: 'Pia Coklat',
         desc: 'Pia coklat',
-        price: 10000,
+        price: 5000,
         button: 'Add to Cart'
     },
     {
@@ -302,7 +313,7 @@ export const productData = [
         alt: 'Pia Keju',
         name: 'Pia Keju',
         desc: 'Pia keju',
-        price: 10000,
+        price: 5000,
         button: 'Add to Cart'
     },
     {
@@ -311,7 +322,7 @@ export const productData = [
         alt: 'Picnic Roll',
         name: 'Picnic Roll',
         desc: 'Picnic roll',
-        price: 10000,
+        price: 110000,
         button: 'Add to Cart'
     },
     {
@@ -320,7 +331,7 @@ export const productData = [
         alt: 'Pie Buah',
         name: 'Pie Buah',
         desc: 'Pie buah',
-        price: 10000,
+        price: 3000,
         button: 'Add to Cart'
     },
     {
@@ -509,7 +520,7 @@ export const productData = [
         alt: 'Spaghetti',
         name: 'Spaghetti',
         desc: 'Spaghetti',
-        price: 10000,
+        price: 20000,
         button: 'Add to Cart'
     }
 ]
@@ -530,7 +541,7 @@ export const productData = [
             alt: 'Dadar Gulung',
             name: 'Dadar Gulung',
             desc: 'Dadar gulung',
-            price: 25000,
+            price: 2500,
             button: 'Add to Cart'
         },
         {
@@ -539,7 +550,7 @@ export const productData = [
             alt: 'Dessert Box',
             name: 'Dessert Box',
             desc: 'Dessert Box',
-            price: 20000,
+            price: 50000,
             button: 'Add to Cart'
         },
         {
@@ -548,7 +559,7 @@ export const productData = [
             alt: 'Dessert Box',
             name: 'Dessert Box',
             desc: 'Dessert box',
-            price: 30000,
+            price: 50000,
             button: 'Add to Cart'
         },
         {
@@ -557,7 +568,7 @@ export const productData = [
             alt: 'Klappertaart',
             name: 'Klappertaart',
             desc: 'Klappertaart',
-            price: 25000,
+            price: 10000,
             button: 'Add to Cart'
         },
         {
@@ -575,7 +586,7 @@ export const productData = [
             alt: 'Bubur Sumsum',
             name: 'Bubur Sumsum',
             desc: 'Bubur Sumsum',
-            price: 25000,
+            price: 10000,
             button: 'Add to Cart'
         },
         {
@@ -584,7 +595,7 @@ export const productData = [
             alt: 'Bugis Mandi',
             name: 'Bugis Mandi',
             desc: 'Bugis Mandi',
-            price: 25000,
+            price: 10000,
             button: 'Add to Cart'
         },
         {
@@ -593,7 +604,7 @@ export const productData = [
             alt: 'Bubur Madura',
             name: 'Bubur Madura',
             desc: 'Bubur Madura',
-            price: 25000,
+            price: 13000,
             button: 'Add to Cart'
         },
         {
@@ -602,7 +613,7 @@ export const productData = [
             alt: 'Kue Lumpur',
             name: 'Kue Lumpur',
             desc: 'Kue Lumpur',
-            price: 5000,
+            price: 3000,
             button: 'Add to Cart'
         },
         {
@@ -611,7 +622,7 @@ export const productData = [
             alt: 'Kue Mangkok',
             name: 'Kue Mangkok Vla',
             desc: 'Kue mangkok isi vla',
-            price: 5000,
+            price: 3000,
             button: 'Add to Cart'
         },
         {
@@ -620,7 +631,7 @@ export const productData = [
             alt: 'Lapis Kentang',
             name: 'Lapis Kentang',
             desc: 'Lapis kentang',
-            price: 5000,
+            price: 3000,
             button: 'Add to Cart'
         },
         {
@@ -629,7 +640,7 @@ export const productData = [
             alt: 'Lapis Kentang',
             name: 'Lapis Kentang',
             desc: 'Lapis kentang',
-            price: 5000,
+            price: 3000,
             button: 'Add to Cart'
         },
         {
@@ -637,8 +648,8 @@ export const productData = [
             id: 62,
             alt: 'Lapis Sagu Roll',
             name: 'Lapis Sagu Roll',
-            desc: 'Lapis sagu roll',
-            price: 5000,
+            desc: 'Harga per loyang',
+            price: 150000,
             button: 'Add to Cart'
         },
         {
@@ -646,8 +657,8 @@ export const productData = [
             id: 63,
             alt: 'Lapis Sagu',
             name: 'Lapis Sagu',
-            desc: 'Lapis sagu',
-            price: 5000,
+            desc: 'Harga per loyang',
+            price: 150000,
             button: 'Add to Cart'
         },
         {
@@ -655,8 +666,8 @@ export const productData = [
             id: 64,
             alt: 'Lapis Sagu',
             name: 'Lapis Sagu',
-            desc: 'Lapis sagu',
-            price: 5000,
+            desc: 'Harga per loyang',
+            price: 150000,
             button: 'Add to Cart'
         },
         {
@@ -682,8 +693,8 @@ export const productData = [
             id: 67,
             alt: 'Onde-Onde',
             name: 'Onde-Onde',
-            desc: 'Onde-onde',
-            price: 10000,
+            desc: 'Harga per 10 pcs',
+            price: 35000,
             button: 'Add to Cart'
         },
         {
@@ -700,8 +711,17 @@ export const productData = [
             id: 69,
             alt: 'Risoles',
             name: 'Risoles',
-            desc: 'Risoles',
-            price: 10000,
+            desc: 'Risoles Sayur',
+            price: 2500,
+            button: 'Add to Cart'
+        },
+        {
+            img: risoles2,
+            id: 72,
+            alt: 'Risoles',
+            name: 'Risoles',
+            desc: 'Risoles Mayo',
+            price: 3500,
             button: 'Add to Cart'
         },
         {
@@ -710,7 +730,7 @@ export const productData = [
             alt: 'Serabi',
             name: 'Serabi',
             desc: 'Serabi',
-            price: 10000,
+            price: 3000,
             button: 'Add to Cart'
         },
     ]
