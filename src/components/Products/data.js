@@ -94,7 +94,7 @@ export const productData = [
     },
     {
         img: banana2,
-        id: 71,
+        id: 49,
         alt: 'Banana Crispy',
         name: 'Banana Crispy',
         desc: 'Banana Crispy',
@@ -175,7 +175,7 @@ export const productData = [
     },
     {
         img: bolu5,
-        id: 73,
+        id: 50,
         alt: 'Bolu Gulung Pandan',
         name: 'Bolu Gulung Pandan',
         desc: 'Bolu gulung',
@@ -328,7 +328,7 @@ export const productData = [
     },
     {
         img: picnic,
-        id: 71,
+        id: 51,
         alt: 'Picnic Roll',
         name: 'Picnic Roll',
         desc: 'Picnic roll',
@@ -538,7 +538,7 @@ export const productData = [
     export const productDataTwo = [
         {
             img: cucur,
-            id: 49,
+            id: 71,
             alt: 'Cucur',
             name: 'Cucur',
             desc: 'Cucur',
@@ -547,7 +547,7 @@ export const productData = [
         },
         {
             img: dadar,
-            id: 50,
+            id: 72,
             alt: 'Dadar Gulung',
             name: 'Dadar Gulung',
             desc: 'Dadar gulung',
@@ -556,7 +556,7 @@ export const productData = [
         },
         {
             img: dessert1,
-            id: 51,
+            id: 73,
             alt: 'Dessert Box',
             name: 'Dessert Box',
             desc: 'Dessert Box',
@@ -727,7 +727,7 @@ export const productData = [
         },
         {
             img: risoles2,
-            id: 72,
+            id: 74,
             alt: 'Risoles',
             name: 'Risoles',
             desc: 'Risoles Mayo',

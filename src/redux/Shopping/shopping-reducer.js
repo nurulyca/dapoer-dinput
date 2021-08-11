@@ -11,7 +11,7 @@ const INITIAL_STATE = {
 const shopReducer = (state = INITIAL_STATE, action) => {
     switch(action.type) {
         case actionTypes.ADD_TO_CART:
-            if (action.payload.id >= 49) {
+            if (action.payload.id >= 52) {
                 const itemTwo = state.productsTwo.find((product) => product.id === action.payload.id )
                 const inCartTwo = state.cart.find((itemTwo) => itemTwo.id === action.payload.id ? true : false);
 
